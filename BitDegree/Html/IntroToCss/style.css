@@ -9,16 +9,22 @@ body{
   box-shadow: 3px 5px 3px black; */
 }
 
-h1{
+h1, h2, h3{
   color: #ffffff;
   text-shadow: 2px 2px 5px black;
-}
-
-h2{
-  color: rgb(0, 204, 255);
-  text-shadow: 1px 1px 3px darkblue;
+  line-height: 1rem;
+  font-family: sans-serif;
 }
 
 .borderImg{
   border: 2px solid red;
+}
+
+ul li{
+  color: white;
+  font-size: 20px;
+}
+
+ul > li{
+  color: yellow;
 }
