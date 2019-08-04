@@ -17,13 +17,29 @@
 //
 // console.log(loginWelcomeMsg);
 
-var sum = 10 + 15;
-var sub = 15 - 10;
-var mul = 10 * 3;
-var div = 9 / 3;
-var mod = 10 % 3;
+// var sum = 10 + 15;
+// var sub = 15 - 10;
+// var mul = 10 * 3;
+// var div = 9 / 3;
+// var mod = 10 % 3;
+//
+// var result = 10 * ((5 + 3) - 4);
+//
+//
+// console.log(sub);
 
-var result = 10 * ((5 + 3) - 4);
+var myAccountBalance = 300;
+var nikes = 799.23;
+var coupon = 500;
 
-
-console.log(sub);
+if(nikes <= myAccountBalance){
+  console.log("we just bought some shoes!");
+  myAccountBalance -= nikes;
+  console.log(myAccountBalance);
+}else if(nikes - coupon <= myAccountBalance){
+  console.log("we just bought some shoes with coupon");
+  myAccountBalance -= (nikes - coupon);
+  console.log(myAccountBalance);
+}else{
+  console.log("You dont have enough money");
+}
