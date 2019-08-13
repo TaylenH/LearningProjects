@@ -54,15 +54,28 @@
 // }
 
 
-var students = ["Timmy", "Janessa", "Arun"];
+// var students = ["Timmy", "Janessa", "Arun"];
+//
+// var naughtyList = [];
+// naughtyList.push(students[0]);
+//
+// var index = naughtyList.indexOf("timmy");
+// var index2 = students.indexOf("Arun");
+// if(index > -1){
+//   naughtyList.splice(index, 1);
+// }
+//
+// console.log(naughtyList);
 
-var naughtyList = [];
-naughtyList.push(students[0]);
 
-var index = naughtyList.indexOf("timmy");
-var index2 = students.indexOf("Arun");
-if(index > -1){
-  naughtyList = naughtyList.splice(index, 1);
+
+// for(var x = 0; x < 10; x++){
+//   console.log(x);
+// }
+
+
+var students = ["John", "Jacob", "Jingle", "Heimer", "Smith"];
+
+for(var i = 0; i < students.length; i++){
+  console.log(students[i]);
 }
-
-console.log(naughtyList);
