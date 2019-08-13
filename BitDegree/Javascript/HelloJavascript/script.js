@@ -74,8 +74,52 @@
 // }
 
 
-var students = ["John", "Jacob", "Jingle", "Heimer", "Smith"];
+// var students = ["John", "Jacob", "Jingle", "Heimer", "Smith"];
+//
+// for(var i = 0; i < students.length; i++){
+//   console.log(students[i]);
+// }
 
-for(var i = 0; i < students.length; i++){
-  console.log(students[i]);
+
+// var length1 = 15;
+// var width1 = 10;
+// var area1 = length1 * width1;
+//
+// var length2 = 12;
+// var width2 = 14;
+// var area2 = length2 + width2;
+
+function area(length, width){
+  return length * width;
 }
+
+var area1 = area(10, 15);
+console.log(area1);
+
+var rectangles = [];
+rectangles.push(area(10, 15));
+rectangles.push(area(14, 2));
+rectangles.push(area(4, 5));
+console.log(rectangles);
+
+var bankBalance = 500;
+
+function makeTransaction(salePrice){
+  if(salePrice <= bankBalance){
+    bankBalance -= salePrice;
+    console.log("purchase successful");
+  }else{
+    console.log("Insufficient Funds");
+  }
+}
+
+console.log(bankBalance);
+makeTransaction(79.00);
+console.log(bankBalance);
+makeTransaction(2.32);
+console.log(bankBalance);
+makeTransaction(10.45);
+console.log(bankBalance);
+
+makeTransaction(450.00);
+console.log(bankBalance);
