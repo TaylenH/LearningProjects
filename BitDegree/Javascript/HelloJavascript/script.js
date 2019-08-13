@@ -45,10 +45,24 @@
 // }
 
 
-if(1 == 1 && 2 == 2 || "joe" == "joe"){
-  console.log("these are both true");
+// if(1 == 1 && 2 == 2 || "joe" == "joe"){
+//   console.log("these are both true");
+// }
+//
+// if(!(1 == 3) || "joe" == "joe"){
+//   console.log("one of these is true");
+// }
+
+
+var students = ["Timmy", "Janessa", "Arun"];
+
+var naughtyList = [];
+naughtyList.push(students[0]);
+
+var index = naughtyList.indexOf("timmy");
+var index2 = students.indexOf("Arun");
+if(index > -1){
+  naughtyList = naughtyList.splice(index, 1);
 }
 
-if(!(1 == 3) || "joe" == "joe"){
-  console.log("one of these is true");
-}
+console.log(naughtyList);
