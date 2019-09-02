@@ -1,4 +1,25 @@
-.jumbotron{
+.jumbotron {
   text-align: center;
   background: none;
+}
+
+.section-light {
+  background-color: #eceeef;
+  padding: 2rem;
+}
+
+.section-dark {
+  background-color: #ccc;
+  padding: 2rem;
+}
+
+.cool-stuff-wrapper {
+  margin-top: 20px;
+}
+
+button.cool-stuff-btn {
+  background-color: red;
+  color: #fff;
+  display: block;
+  margin: auto;
 }
