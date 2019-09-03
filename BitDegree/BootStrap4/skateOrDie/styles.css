@@ -42,3 +42,27 @@ button.btn-center {
   margin: 15px auto 20px;
   width: 54%;
 }
+
+img.footer-img {
+  padding: 15px;
+}
+
+.fa {
+  margin: 10px;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-google-plus-square {
+  color: #c32f10;
+}
+
+.fa-instagram {
+  color: #fff;
+}
+
+.socialWrapper {
+  margin: auto;
+}
