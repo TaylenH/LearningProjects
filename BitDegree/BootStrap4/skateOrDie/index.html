@@ -172,26 +172,26 @@
         <div class="col-sm-12">
           <div class="row">
             <div class="col-sm-12 col-lg-4">
-              <img class="img-fluid img-center" src="assets/kickflip.jpg" >
+              <img class="img-fluid img-center" src="assets/kickflip.jpg">
               <div class="row">
                 <div class="col-sm-12">
-                  <button type="button" class="btn btn-lg btn-danger btn-center">Kickflip</button>
+                  <button type="button" class="btn btn-lg btn-danger btn-center" data-toggle="modal" data-target=".kf-modal-lg">Kickflip</button>
                 </div>
               </div>
             </div>
             <div class="col-sm-12 col-lg-4">
-              <img class="img-fluid img-center" src="assets/360flip.jpg" >
+              <img class="img-fluid img-center" src="assets/360flip.jpg">
               <div class="row">
                 <div class="col-sm-12">
-                  <button type="button" class="btn btn-lg btn-danger btn-center">360 Flip</button>
+                  <button type="button" class="btn btn-lg btn-danger btn-center" data-toggle="modal" data-target=".360-modal-md">360 Flip</button>
                 </div>
               </div>
             </div>
             <div class="col-sm-12 col-lg-4">
-              <img class="img-fluid img-center" src="assets/bscrook.jpg" >
+              <img class="img-fluid img-center" src="assets/bscrook.jpg">
               <div class="row">
                 <div class="col-sm-12">
-                  <button type="button" class="btn btn-lg btn-danger btn-center">BS Crook</button>
+                  <button type="button" class="btn btn-lg btn-danger btn-center" data-toggle="modal" data-target=".bscrook-modal-sm">BS Crook</button>
                 </div>
               </div>
             </div>
@@ -200,12 +200,24 @@
       </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="footer bg-inverse">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-lg-3">
+            <img class="img-fluid" src="assets/KFS_LIGHT.png">
+          </div>
+          <div class="col-sm-12 col-lg-9">
+            
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
 
 
-
-
+    <!-- Modals -->
 
     <!-- Cool Stuff Modal -->
     <div class="modal fade" id="coolStuffModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -249,6 +261,41 @@
       </div>
     </div>
 
+    <!-- Kickflip modal -->
+    <div class="modal fade kf-modal-lg" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ilzy0viqVes" allowfullscreen></iframe>
+          </div>
+          <p>Kickflips are easy. Pop, Flick, Catch, Land. #BOOM</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 360 flip modal -->
+    <div class="modal fade 360-modal-md" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ilzy0viqVes" allowfullscreen></iframe>
+          </div>
+          <p>360 flips are easy. Pop, Scissor kick, Catch, Land. #BOOM</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- bs crook modal -->
+    <div class="modal fade bscrook-modal-sm" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ilzy0viqVes" allowfullscreen></iframe>
+          </div>
+          <p>BackSide Crooks are sick! Nollie in Nollie out! #BOOM</p>
+        </div>
+      </div>
+    </div>
 
 
 
