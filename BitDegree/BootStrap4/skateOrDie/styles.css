@@ -31,3 +31,14 @@ h5.modal-title {
 .modal-form-wrapper {
   padding: 2rem;
 }
+
+img.img-center {
+  display: block;
+  margin: auto;
+}
+
+button.btn-center {
+  display: block;
+  margin: 15px auto 20px;
+  width: 54%;
+}
