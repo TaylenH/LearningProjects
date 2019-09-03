@@ -23,3 +23,11 @@ button.cool-stuff-btn {
   display: block;
   margin: auto;
 }
+
+h5.modal-title {
+  margin: auto;
+}
+
+.modal-form-wrapper {
+  padding: 2rem;
+}
