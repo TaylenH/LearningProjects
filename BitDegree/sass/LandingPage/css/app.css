@@ -79,27 +79,29 @@ body {
   font-weight: 700;
   margin: -50px 0 20px;
   color: #cd483d; }
-  .home-title .b-text {
-    font-size: 1.25rem;
-    margin: 0 0 20px;
-    color: #fff;
-    font-family: "Roboto Slab", serif;
-    padding-right: 25px;
-    line-height: 1.7; }
-  .home-title .b-card {
-    padding: 40px;
-    text-align: center;
-    color: #fff;
-    background-color: #212648;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    margin-left: 15px; }
-    .home-title .b-card .b-title {
-      font-size: 27px;
-      font-weight: 700;
-      color: #fffcfc;
-      margin: 0 0 15px; }
-      .home-title .b-card .b-title .b-video {
-        margin: 0 auto 15px; }
+
+.b-text {
+  font-size: 1.25rem;
+  margin: 0 0 20px;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  padding-right: 25px;
+  line-height: 1.7; }
+
+.b-card {
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #212648;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-left: 15px; }
+  .b-card .b-title {
+    font-size: 27px;
+    font-weight: 700;
+    color: #fffcfc;
+    margin: 0 0 15px; }
+    .b-card .b-title .b-video {
+      margin: 0 auto 15px; }
 
 .nav-header {
   padding: 0 0 10px;
@@ -142,5 +144,57 @@ body {
 .img-list {
   margin: 0 -20px -40px;
   padding: 0; }
+
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: center;
+  font-size: 1rem;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  transition: all, 0.2s ease-in-out;
+  border-radius: 10px;
+  padding: 0.5rem, 1rem;
+  font-size: 1rem;
+  border-radius: 10px; }
+
+.buy-btn-lg {
+  padding: 35px, 12px;
+  font-size: 1.25rem;
+  border-radius: 30px;
+  width: 100%; }
+
+.buy-btn-md {
+  padding: 15%, 50px;
+  font-size: 1rem;
+  border-radius: 30px; }
+
+.btn-primary {
+  color: #f6f5f5;
+  background-color: #cd483d;
+  border-color: #cd483d; }
+  .btn-primary:hover {
+    color: #f6f5f5;
+    background-color: #ab362c;
+    border-color: #ab362c; }
+
+.btn-dark {
+  color: #f6f5f5;
+  background-color: #757fc0;
+  border-color: #212648; }
+  .btn-dark:hover {
+    color: #f6f5f5;
+    background-color: #525eb0;
+    border-color: #111425; }
+
+.btn-third {
+  color: #f6f5f5;
+  background-color: #cd4b3c;
+  border-color: #cd4b3c; }
+  .btn-third:hover {
+    color: #f6f5f5;
+    background-color: #aa392c;
+    border-color: #aa392c; }
 
 /*# sourceMappingURL=app.css.map */
