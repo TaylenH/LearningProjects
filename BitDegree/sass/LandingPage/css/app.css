@@ -2,12 +2,12 @@
 Error: Undefined variable: "$base-white".
         on line 26 of sass/layout/_banner.sass
         from line 3 of sass/layout/_layout-dir.sass
-        from line 4 of sass/app.sass
+        from line 5 of sass/app.sass
 
 Backtrace:
 sass/layout/_banner.sass:26
 sass/layout/_layout-dir.sass:3
-sass/app.sass:4
+sass/app.sass:5
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -109,4 +109,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$base-white\".\A         on line 26 of sass/layout/_banner.sass\A         from line 3 of sass/layout/_layout-dir.sass\A         from line 4 of sass/app.sass"; }
+  content: "Error: Undefined variable: \"$base-white\".\A         on line 26 of sass/layout/_banner.sass\A         from line 3 of sass/layout/_layout-dir.sass\A         from line 5 of sass/app.sass"; }
