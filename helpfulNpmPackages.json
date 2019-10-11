@@ -1,0 +1,75 @@
+{
+  "react": [
+    "react": "react core",
+    "react-dom": "react rendering"
+  ],
+  "webpack": [
+    "webpack": "webpack core",
+    "webpack-cli": "cli for webpack"
+    "@svgr/webpack": "transforms svg objects to react components",
+    "case-sensitive-paths-webpack-plugin": "stops case sensenitive oeprating systemms from casuing issues",
+    "html-webpack-plugin": "creates an html file for bundles",
+    "terser-webpack-plugin": "allows minification of javascript",
+    "url-loader": "transforms files into base64 uri"
+    "webpack-dev-server": "allows live relaoding of webpack"
+    "webpack-manifest": "Create manifest file from files"
+    "workbox-webpack-plugin": "deals with service workers",
+    "webpack-dev-server": "simulated express server for Hot module reloading (live preview)"
+    "uglifyjs-webpack-plugin": "minify and optimize js"
+  ],
+  "babel": [
+    "@babel/core": "babel core",
+    "@babel/preset-env": "es6 polyfll",
+    "@babel/plugins": "various tc39 proposals",
+    "babel-eslint": "lets eslint run on babel parsed code",
+    "babel-jest": "allows jest to work well with babel",
+    "core-js and regenerator-runtime": "needed for full es2015 polyfill"
+  ],
+  "css": [
+    "mini-css-extract-plugin": "takes modular css and puts it in one build file, DO NOT USE WITH STYLE_LOADER",
+    "postcss": "postcss core",
+    "postcss-import": "css import() injection",
+    "postcss-preset-env": "babel for css",
+    "postcss-flexbugs-fixes": "fixes browser specific flexbox bugs",
+    "postcss-safe-parser": "finds and fixes css errors",
+    "cssnano": "optomizer and minifier",
+    "node-sass": "node bindings to sass",
+    "sass": "sass core"
+  ],
+  "eslint":[
+    "eslint": "eslint core"
+    "stylelint": "eslint for css",
+    "stylelint-webpack-plugin": "webpack requirement",
+    "eslint-plugin-flowtype": "adds flowtype sytax",
+    "eslint-plugin-import": "adds linting support fo import/export",
+    "eslint-plugin-jsx-ally": "enforces accessibility rules for things like screen readers in jsx",
+    "eslint-plugin-react": "adds eslint rules for react"
+  ],
+  "jest": [
+    "jest": "jest core",
+    "jest-pnp-resolver": "adds plugnplay support to jest",
+    "jest-resolve": "?needed?",
+    "jest-watch-typehead": "allows filtering of jest tests"
+  ],
+  "enzyme": [
+    "enzyme": "enzyme core",
+    "enzyme-adapter-react-16": "adapter to help work with jest"
+  ],
+  "prettier": [
+    "prettier": "prettier"
+  ],
+  "loaders": [
+    "babel-loader": "babel",
+    "css-loader": "resolves @import and url()",
+    "eslint-loader": "eslint",
+    "file-loader": "resolves url() requests in css",
+    "postcss-loader": "postcss",
+    "sass-loader": "sass"
+  ],
+  "others": [
+    "bfj": "parses large json files",
+    "fs-extra": "replaces nodes fs"
+    "fibers": "allows co-routines in js, like threads, needed by sass"
+    "webpack-visualizer-plugin": "stats on file sizes"
+  ]
+}
