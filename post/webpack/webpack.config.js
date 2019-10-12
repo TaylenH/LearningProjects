@@ -15,13 +15,14 @@ module.exports = {
       devMode ? loaders.CSSDevLoader : loaders.CSSProdLoader,
       loaders.JSLoader,
       loaders.ESLintLoader,
+      loaders.AssetLoader
     ]
   },
 
   plugins: [
     plugins.StyleLintPlugin,
     plugins.MiniCssExtractPlugin,
-    plugins.VisualizerPlugin,
+    plugins.VisualizerPlugin
   ],
 
   devServer: {
@@ -29,7 +30,9 @@ module.exports = {
     hot: true,
     contentBase: 'build',
     inline: true,
-    open: true
+    open: true,
+    compress: true,
+    historyApiFallback: true,
   }
 
 };

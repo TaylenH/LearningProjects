@@ -1,20 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import Site from './site';
+import Index from './index';
 
 const render = (Component) => {
   ReactDOM.render(
     <AppContainer>
-      <Component name="world" />
+      <Component />
     </AppContainer>,
     document.getElementById('root')
   );
 };
 
-render(Site);
+render(Index);
 
-module.hot.accept('./site.js', () => {
-  const NextSite = require('./site.js').default;
-  render(NextSite);
+module.hot.accept('./index.js', () => {
+  const NextIndex = require('./index.js').default;
+  render(NextIndex);
 });

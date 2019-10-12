@@ -10,7 +10,7 @@ const Mini = new _Mini({
 
 const StyleLintPlugin = new _stylelintplugin({
   configFile: path.resolve(__dirname, 'stylelint.config.js'),
-  context: path.resolve(__dirname, '../src/css'),
+  context: path.resolve(__dirname, '../src'),
   files: '**/*.sass',
   failOnError: false,
   quiet: false
@@ -19,7 +19,6 @@ const StyleLintPlugin = new _stylelintplugin({
 const Vis = new Visualizer({
   filename: '../stats/stats.html'
 });
-
 
 module.exports = {
   MiniCssExtractPlugin: Mini,

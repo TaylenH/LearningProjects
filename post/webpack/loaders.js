@@ -30,7 +30,7 @@ const CSSProdLoader = {
     {
       loader: MiniCssExtractorPlugin.loader,
       options: {
-        pubicPath: __dirname + '../build/css/'
+        pubicPath: __dirname + '../build'
       }
     },
     {
@@ -88,9 +88,25 @@ const CSSDevLoader = {
   ]
 };
 
+const AssetLoader = {
+  test: /\.(png|jpe?g|gif)$/i,
+  use: [
+    {
+      loader: 'file-loader'
+    },
+    {
+      loader: 'url-loader',
+      options: {
+        limit: 8192
+      }
+    }
+  ]
+}
+
 module.exports = {
   JSLoader: JSLoader,
   ESLintLoader: ESLintLoader,
   CSSProdLoader: CSSProdLoader,
-  CSSDevLoader: CSSDevLoader
+  CSSDevLoader: CSSDevLoader,
+  AssetLoader: AssetLoader
 };
