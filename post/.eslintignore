@@ -1,0 +1,5 @@
+/cypress/
+/coverage/
+/build/
+/stats/
+/src/**/*.test.js

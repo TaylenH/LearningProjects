@@ -3,9 +3,12 @@ const MiniCssExtractorPlugin = require('mini-css-extract-plugin');
 const JSLoader = {
   test: /\.[tj]sx?$/,
   exclude: /node_modules/,
-  use: {
+  use: [{
+    loader: 'react-hot-loader/webpack'
+  },
+  {
     loader: 'babel-loader',
-  }
+  }]
 };
 
 const ESLintLoader = {
@@ -20,7 +23,7 @@ const ESLintLoader = {
   }
 }
 
-const CSSLoader = {
+const CSSProdLoader = {
   test: /\.s?[ac]ss$/,
   exclude: /node_modules/,
   use: [
@@ -54,8 +57,40 @@ const CSSLoader = {
   ]
 };
 
+const CSSDevLoader = {
+  test: /\.s?[ac]ss$/,
+  exclude: /node_modules/,
+  use: [
+    {
+      loader: 'style-loader'
+    },
+    {
+      loader: 'css-loader',
+      options: {
+        importLoaders: 1,
+        modules: {
+          localIdentName: '[path][name]__[local]--[hash:base64:5]'
+        }
+      }
+    },
+
+    {
+      loader: 'postcss-loader',
+      options: {
+        config: {
+          path: __dirname + '/postcss.config.js'
+        }
+      }
+    },
+    {
+      loader: 'sass-loader'
+    }
+  ]
+};
+
 module.exports = {
   JSLoader: JSLoader,
   ESLintLoader: ESLintLoader,
-  CSSLoader: CSSLoader
+  CSSProdLoader: CSSProdLoader,
+  CSSDevLoader: CSSDevLoader
 };

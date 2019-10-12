@@ -1,6 +1,7 @@
 const path = require('path');
 const loaders = require('./loaders');
 const plugins = require('./plugins');
+const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   entry: "./src/js/app.js",
@@ -11,7 +12,7 @@ module.exports = {
 
   module: {
     rules: [
-      loaders.CSSLoader,
+      devMode ? loaders.CSSDevLoader : loaders.CSSProdLoader,
       loaders.JSLoader,
       loaders.ESLintLoader,
     ]
@@ -22,5 +23,13 @@ module.exports = {
     plugins.MiniCssExtractPlugin,
     plugins.VisualizerPlugin,
   ],
+
+  devServer: {
+    port: 8080,
+    hot: true,
+    contentBase: 'build',
+    inline: true,
+    open: true
+  }
 
 };

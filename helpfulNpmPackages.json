@@ -55,6 +55,9 @@
     "enzyme": "enzyme core",
     "enzyme-adapter-react-16": "adapter to help work with jest"
   ],
+  "cypress": [
+    "cypress": "cypress core"
+  ],
   "prettier": [
     "prettier": "prettier"
   ],

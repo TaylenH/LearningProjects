@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
-import Styles from '../css/components/site.sass';
-import Robot from './robot';
+import PropTypes from 'prop-types';
+import styles from './site.sass';
 
-export default class Site extends Component {
+class Site extends Component {
   render() {
+    const { name } = this.props;
     return (
       <div>
-        <h1 className={Styles.redboi}>I am red</h1>
-        <Robot />
-        <a className={Styles.datb} href='#'>
-          Hello
-        </a>
+        <p className={styles.msg}>Hello, {name}!</p>
       </div>
     );
   }
 }
+
+Site.propTypes = {
+  name: PropTypes.string.isRequired
+};
+
+export default Site;

@@ -18,7 +18,7 @@ module.exports = {
   clearMocks: true,
 
   // Indicates whether the coverage information should be collected while executing the test
-  // collectCoverage: false,
+  collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   collectCoverageFrom: ['src/**/*.{js, jsx, mjs}'],
@@ -168,7 +168,8 @@ module.exports = {
 
   // A map from regular expressions to paths to transformers
 transform: {
-  "^.+\\.[t|j]sx?$": "babel-jest"
+  "^.+\\.[t|j]sx?$": "babel-jest",
+  ".+\\.(css|styl|less|sass|scss)$": "<rootDir>/node_modules/jest-css-modules-transform"
 },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
