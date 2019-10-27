@@ -1,3 +1,4 @@
+import { hot } from 'react-hot-loader/root';
 import React, { Suspense, lazy } from 'react';
 import {
   BrowserRouter as Router,
@@ -5,6 +6,8 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+
+const TopicsContext = React.createContext('default context');
 
 const Home = lazy(() => import('./routes/home/Home.js'));
 const About = lazy(() => import('./routes/about/About.js'));
@@ -17,27 +20,29 @@ class Index extends React.Component {
         <div>
           <ul>
             <li>
-              <Link to='/'>Home</Link>
+              <Link to='/' id='homeLink'>Home</Link>
             </li>
             <li>
-              <Link to='/about'>About</Link>
+              <Link to='/about' id='aboutLink'>About</Link>
             </li>
             <li>
-              <Link to='/topics'>Topics</Link>
+              <Link to='/topics' id='topicsLink'>Topics</Link>
             </li>
           </ul>
-
-          <Suspense fallback={<div>Loading...</div>}>
-            <Switch>
-              <Route exact path='/' component={Home} />
-              <Route path='/about' component={About} />
-              <Route path='/topics' component={Topics} />
-            </Switch>
-          </Suspense>
+          <TopicsContext.Provider value='custom context'>
+            <Suspense fallback={<div>Loading...</div>}>
+              <Switch>
+                <Route exact path='/' component={Home} />
+                <Route path='/about' component={About} />
+                <Route path='/topics' component={Topics} />
+              </Switch>
+            </Suspense>
+          </TopicsContext.Provider>
         </div>
       </Router>
     );
   }
 }
 
-export default Index;
+export default hot(Index);
+export { TopicsContext };

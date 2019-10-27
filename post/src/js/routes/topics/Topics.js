@@ -13,15 +13,15 @@ class Topics extends React.Component {
     const { match } = this.props;
 
     return (
-      <div>
+      <>
         <h2 className={styles.topicsTag}>Topics</h2>
 
         <ul>
           <li>
-            <Link to={`${match.url}/components`}>Componets</Link>
+            <Link to={`${match.url}/components`} id='componentsLink'>Componets</Link>
           </li>
           <li>
-            <Link to={`${match.url}/props-v-state`}>Props v state</Link>
+            <Link to={`${match.url}/props-v-state`} id='propsVStateLink'>Props v state</Link>
           </li>
         </ul>
 
@@ -31,7 +31,7 @@ class Topics extends React.Component {
             <h3 className={styles.selectTag}>Please select a topic</h3>
           </Route>
         </Switch>
-      </div>
+      </>
     );
   }
 }

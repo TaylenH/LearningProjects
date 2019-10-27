@@ -3,12 +3,10 @@ const MiniCssExtractorPlugin = require('mini-css-extract-plugin');
 const JSLoader = {
   test: /\.[tj]sx?$/,
   exclude: /node_modules/,
-  use: [{
-    loader: 'react-hot-loader/webpack'
-  },
+  use: 
   {
     loader: 'babel-loader',
-  }]
+  }
 };
 
 const ESLintLoader = {
