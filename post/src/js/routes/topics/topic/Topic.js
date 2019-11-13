@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { TopicsContext } from '../../../index';
+import TopicsContext from '../../../TopicsContext';
 import styles from './topic.sass';
 
 class Topic extends React.Component {

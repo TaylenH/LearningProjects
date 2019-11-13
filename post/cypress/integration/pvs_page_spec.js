@@ -3,6 +3,6 @@ describe('check topics load', () => {
     cy.visit('/');
     cy.get('#topicsLink').click();
     cy.get('#propsVStateLink').click();
-    cy.get('h3').should('have.text', 'Requested topic ID: props-v-state')
+    cy.get('h3').should('have.text', 'Requested topic ID: props-v-state');
   });
 });

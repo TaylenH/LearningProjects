@@ -6,8 +6,8 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import TopicsContext from './TopicsContext';
 
-const TopicsContext = React.createContext('default context');
 
 const Home = lazy(() => import('./routes/home/Home.js'));
 const About = lazy(() => import('./routes/about/About.js'));
@@ -45,4 +45,3 @@ class Index extends React.Component {
 }
 
 export default hot(Index);
-export { TopicsContext };
