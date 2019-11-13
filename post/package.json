@@ -14,7 +14,7 @@
     "pretty": "prettier --config webpack/prettier.config.js --write",
     "check": "prettier --config webpack/prettier.config.js --check",
     "stylelint": "stylelint src/**/*.sass --config webpack/stylelint.config.js",
-    "eslint": "eslint --config webpack/.eslintrc src/**/*.js",
+    "eslint": "eslint --config ./eslintrc src/**/*.js",
     "lint": "npm run stylelint && npm run eslint",
     "webpack": "webpack",
     "test": "jest",
