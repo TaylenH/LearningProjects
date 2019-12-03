@@ -7,6 +7,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Pandas Eating Lots',
+    description: 'A simple description about pandas eating',
+    author: 'gatsbyjs',
   },
   plugins: [
     'gatsby-plugin-emotion',
@@ -24,5 +26,20 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'GatsbyJS',
+        short_name: 'GatsbyJS',
+        start_url: '/',
+        background_color: '#6b37bf',
+        theme_color: '#6b37bf',
+        //enables add to homescren prompt and disable browser ui
+        display: 'standalone',
+        icon: 'src/images/icon.png' //this path is relative to the root folder
+      },
+    },
+    'gatsby-plugin-offline',
+    'gatsby-plugin-react-helmet',
   ],
 }
